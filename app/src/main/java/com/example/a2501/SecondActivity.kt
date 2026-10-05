@@ -22,7 +22,6 @@ class SecondActivity : ComponentActivity() {
         super.onStart()
         Timber.d("SecondActivity: onStart()")
 
-        // Попередня ручна реєстрація детектора з Частин 1-4:
         // val detector = (application as MyApplication).backgroundDetector
         // detector.onActivityStarted()
     }
@@ -31,7 +30,6 @@ class SecondActivity : ComponentActivity() {
         super.onStop()
         Timber.d("SecondActivity: onStop()")
 
-        // Попередня ручна реєстрація детектора з Частин 1-4:
         // val detector = (application as MyApplication).backgroundDetector
         // detector.onActivityStopped()
     }

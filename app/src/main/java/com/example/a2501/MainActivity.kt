@@ -53,14 +53,12 @@ class MainActivity : ComponentActivity() {
         }
     }
 
-    // Фінальний варіант виправлення витоку (спосіб B): Activity видаляє себе
-    // зі списку слухачів, коли знищується.
+
     override fun onDestroy() {
         UserTracker.unregister(this)
         super.onDestroy()
     }
 
-    // Попередня ручна реєстрація детектора з Частин 1-4:
     // override fun onStart() {
     //     super.onStart()
     //     val detector = (application as MyApplication).backgroundDetector

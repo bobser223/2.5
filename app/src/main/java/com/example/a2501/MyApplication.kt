@@ -20,8 +20,7 @@ class MyApplication : Application() {
 
         ProcessLifecycleOwner.get().lifecycle.addObserver(backgroundDetector)
 
-        // Попередня реєстрація з Частини 5:
-        // registerActivityLifecycleCallbacks(backgroundDetector)
+
 
         registerActivityLifecycleCallbacks(
             object : ActivityLifecycleCallbacks {
